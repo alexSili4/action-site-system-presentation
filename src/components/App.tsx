@@ -8,6 +8,7 @@ const ServiceUnavailablePage = lazy(
   () => import('@/pages/ServiceUnavailablePage')
 );
 const MainPage = lazy(() => import('@/pages/MainPage'));
+const TestMainPage = lazy(() => import('@/pages/TestMainPage'));
 const CabinetPage = lazy(() => import('@/pages/CabinetPage'));
 const PromotionsPage = lazy(() => import('@/pages/PromotionsPage'));
 const PromotionDetailsPage = lazy(() => import('@/pages/PromotionDetailsPage'));
@@ -18,6 +19,7 @@ const App: FC = () => {
       <Route path={PagePaths.root} element={<SharedLayout />}>
         <Route index element={<MainPage />} />
         <Route path={PagePaths.root} element={<MainPage />} />
+        <Route path={PagePaths.main} element={<TestMainPage />} />
         <Route path={PagePaths.cabinet} element={<CabinetPage />} />
         <Route path={PagePaths.promotions} element={<PromotionsPage />} />
         <Route

@@ -8,6 +8,8 @@ import {
   geologicaRegular,
   delaGothicOneRegular,
   oswaldBold,
+  myriadProRegular,
+  montserratBold,
 } from '@/fonts';
 
 const GlobalStyles: FC = () => (
@@ -46,6 +48,20 @@ const GlobalStyles: FC = () => (
         src: local(${theme.fontFamily.oswald}),
           url(${oswaldBold}) format('truetype');
         font-weight: 700;
+      }
+
+      @font-face {
+        font-family: ${theme.fontFamily.montserrat};
+        src: local(${theme.fontFamily.montserrat}),
+          url(${montserratBold}) format('truetype');
+        font-weight: 700;
+      }
+
+      @font-face {
+        font-family: ${theme.fontFamily.myriadPro};
+        src: local(${theme.fontFamily.myriadPro}),
+          url(${myriadProRegular}) format('opentype');
+        font-weight: 400;
       }
 
       body {

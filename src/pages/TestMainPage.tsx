@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import Container from '@/components/Container';
 import HeroSection from '@/components/HeroSection';
-import AppInfo from '@/components/AppInfo';
+import AppInfoMain from '@/components/AppInfoMain';
 
-const MainPage: FC = () => (
+const TestMainPage: FC = () => (
   <HeroSection>
     <Container>
-      <AppInfo />
+      <AppInfoMain />
     </Container>
   </HeroSection>
 );
 
-export default MainPage;
+export default TestMainPage;
